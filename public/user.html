@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>User Panel - Add Courier</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+  <nav class="header-nav">
+    <a href="/user.html" class="btn">User Panel</a>
+    <h1 class="site-title">Fastest Courier Service</h1>
+    <a href="/admin.html" class="btn">Go to Admin Panel</a>
+  </nav>
+</header>
+
+
+  <main>
+    <h2>Request a Courier Pickup</h2>
+<br>
+    <form id="userForm" class="form">
+      <fieldset>
+        <legend>Sender Info</legend>
+        <input name="senderFullName" placeholder="Full Name" required />
+        <input name="senderPhone" placeholder="Phone Number" />
+        <input name="senderAddress" placeholder="Address" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Receiver Info</legend>
+        <input name="receiverFullName" placeholder="Full Name" required />
+        <input name="receiverPhone" placeholder="Phone Number" />
+        <input name="receiverAddress" placeholder="Address" />
+      </fieldset>
+
+      <label>Weight (kg)
+        <input name="weight" type="number" step="0.01" required />
+      </label>
+
+      <label>Remarks
+        <input name="remarks" placeholder="Any special instructions..." />
+      </label>
+
+      <button type="submit" class="btn">Submit Courier Request</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </main>
+    <footer>
+    <p>&copy; 2025 Fastest Courier Service. All rights reserved.</p>
+    <p>Designed & Developed by <span class="highlight">Somnath Pal</span></p>
+  </footer>
+
+  <script src="/user.js"></script>
+</body>
+</html>

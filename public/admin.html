@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard - Courier Management</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+  <nav class="header-nav">
+    <a href="/admin.html" class="btn">Admin Panel</a>
+    <h1 class="site-title">Fastest Courier Service</h1>
+    <a href="/user.html" class="btn">Go to User Panel</a>
+  </nav>
+</header>
+
+
+  <main>
+    <section class="controls">
+      <input id="search" placeholder="Search by tracking number or name" />
+      <select id="statusFilter">
+        <option value="">All Statuses</option>
+        <option>Pending</option>
+        <option>In Transit</option>
+        <option>Delivered</option>
+      </select>
+      <button id="refresh" class="btn">Refresh</button>
+    </section>
+
+    <section id="list" class="list"></section>
+  </main>
+
+  <!-- Template for courier cards -->
+  <template id="rowTpl">
+    <div class="card">
+      <div class="top">
+        <strong class="tracking"></strong>
+        <span class="status"></span>
+      </div>
+      <div class="body">
+        <div><b>Sender:</b> <span class="sender"></span></div>
+        <div><b>Receiver:</b> <span class="receiver"></span></div>
+        <div><b>Weight:</b> <span class="weight"></span> kg</div>
+        <div><b>Remarks:</b> <span class="remarks"></span></div>
+      </div>
+      <div class="actions">
+  <label>Dispatch Date:
+    <input type="date" class="dispatchDate" />
+  </label>
+  <div class="bottom-row">
+    <select class="statusSelect">
+      <option>Pending</option>
+      <option>In Transit</option>
+      <option>Delivered</option>
+    </select>
+    <button class="btn saveBtn">Save</button>
+  </div>
+</div>
+
+    </div>
+  </template>
+    <footer>
+    <p>&copy; 2025 Fastest Courier Service. All rights reserved.</p>
+    <p>Designed & Developed by <span class="highlight">Somnath Pal</span></p>
+  </footer>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
