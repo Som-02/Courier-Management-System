@@ -2,7 +2,7 @@
 
 A full-stack web application for managing courier bookings, tracking shipments, and maintaining customer records. Built with Node.js, Express, and MySQL — with a clean HTML/CSS/JS frontend.
 
-![App Screenshot](Capture.PNG)
+![App Screenshot](Capture.png)
 ---
 
 ## 📋 Table of Contents
