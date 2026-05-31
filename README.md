@@ -16,7 +16,6 @@ A full-stack web application for managing courier bookings, tracking shipments, 
 - [Running Locally](#running-locally)
 - [API Overview](#api-overview)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
